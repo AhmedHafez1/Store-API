@@ -2,6 +2,7 @@ const env = require('dotenv');
 const connectDB = require('./db/connect');
 const notFoundHandler = require('./middleware/not-found');
 const errorHandler = require('./middleware/error-handler');
+require('express-async-errors');
 const productsRouter = require('./routes/products');
 
 const express = require('express');
